@@ -14,6 +14,7 @@
 * [`090-gerryOkregi.sql`](090-gerryOkregi.sql) -- generates the district-level aggregate stats table (`gerryOkregi`)
 
 ## Chapter 3.2 -- seats-votes
+### Parametric model
 * [`100-anonAlphaFit.R`](100-anonAlphaFit.R) -- R code for fitting $\alpha$ parameters
 * [`110-qFit.R`](110-qFit.R) -- R code for fitting $q$ parameters
 * [`115-qFitHypo.R`](115-qFitHypo.R) -- R code for fitting $q$ parameters for vote-shifted results tables
@@ -24,14 +25,15 @@
 * [`155-expSeatsUpdate.sql`](155-expSeatsUpdate.sql) -- SQL script that saves the results of `150-expSeats.m` to the database
 * [`160-seatsDist.R`](160-seatsDist.R) -- R code for computing seat count distributions
 * [`165-pValues.sql`](165-pValues.sql) -- SQL code for computing empirical seat $p$-values
-
 * [`200-effThold.R`](200-effThold.R) -- compute effective seat thresholds
-* [`250-np.R`](250-np.R) -- compute non-parameteric seats-votes regression curve
 
+### Non-parametric models
+* [`250-np.R`](250-np.R) -- compute non-parameteric seats-votes regression curve
 * [`300-normalizeV.R`](300-normalizeV.R) -- compute normalized vote percentages
 * [`350-outliers.sql`](350-outliers.sql) -- compute outlier detection scores
 * [`360-outliersNorm.sql`](360-outliersNorm.sql) -- normalize outlier detection scores
 
+### Tables and plots
 * [`chapter-3-2.sql`](chapter-3-2.sql) -- generate tables for Chapter 3.2
 * [`chapter-3-2-plots.R`](chapter-3-2-plots.R) -- generate plots for Chapter 3.2
 
@@ -40,20 +42,17 @@
 * [`405-gerrySwing.sql`](405-gerrySwing.sql) -- initialize vote swing simulation tables
 * [`410-gerrySwingV.R`](410-gerrySwingV.R) -- vote swing simulations
 * [`420-uniformSwing.R`](420-uniformSwing.R) -- uniform swing simulations (old version)
-
 * [`chapter-3-3.R`](chapter-3-3.R) -- generate tables for Chapter 3.3
 * [`chapter-3-3-plots.R`](chapter-3-3-plots.R) -- generate plots for Chapter 3.3
 
 ## Chapter 3.4 -- efficiency gap
 * [`500-wastedVotes.sql`](500-wastedVotes.sql) -- compute wasted vote counts
 * [`550-efficiencyGap.R`](550-efficiencyGap.R) -- compute efficiency gap indices
-
 * [`chapter-3-4.sql`](chapter-3-4.sql) -- generate tables for Chapter 3.4
 
 ## Chapter 3.5 -- malapportionment
 * [`600-malapp.sql`](600-malapp.sql) -- compute malapportionment indices
 * [`650-malappParty.sql`](650-malappParty.sql) -- compute party-specific malapportionment indices
-
 * [`chapter-3-5.sql`](chapter-3-5.sql) -- generate tables for Chapter 3.5
 * [`chapter-3-5.R`](chapter-3-5.R) -- statistical model for Chapter 3.5
 
@@ -64,7 +63,6 @@
 * [`750-tiltClusWBP.R`](750-tiltClusWBP.R) -- precinct clustering for tilt computations
 * [`760-tiltWBP.sql`](760-tiltWBP.sql) -- compute mayoral election tilt
 * [`770-tiltRDA.sql`](770-tiltRDA.sql) -- compute council election tilt
-
 * [`chapter-3-7-polar.sql`](chapter-3-7-polar.sql) -- generate tables for Chapter 3.7
 * [`chapter-3-7-polar.R`](chapter-3-7-polar.R) -- generate plots for Chapter 3.7
 
@@ -84,7 +82,6 @@
 * [`krakow7-swing.R`](krakow7-swing.R) -- swing simulations
 * [`krakow7-swing2.R`](krakow7-swing2.R) -- swing simulations
 * [`krakow8-waste.sql`](krakow8-waste.sql) -- compute wasted votes
-
 * [`krakowStats.sql`](krakowStats.sql) -- aggregate stats
 * [`chapter-3-8-wyniki.R`](chapter-3-8-wyniki.R) -- generate election result plots for Chapter 3.8
 * [`chapter-3-8.R`](chapter-3-8.R) -- generate method plots for Chapter 3.8
@@ -93,7 +90,6 @@
 * [`900-suspects.sql`](900-suspects.sql) -- generates the `suspects` table
 * [`920-suspectsAggr.sql`](920-suspectsAggr.sql) -- aggregation of suspicion indices
 * [`950-intent.sql`](950-intent.sql) -- aggregation of intent indicators
-
 * [`chapter-4-1.sql`](chapter-4-1.sql) -- generate tables for Chapter 4.1
 * [`chapter-4-1.R`](chapter-4-1.R) -- generate plots for Chapter 4.1
 * [`chapter-4-5.sql`](chapter-4-5.sql) -- generate tables for Chapter 4.5
