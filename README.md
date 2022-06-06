@@ -32,67 +32,72 @@
 * [`350-outliers.sql`](350-outliers.sql) -- compute outlier detection scores
 * [`360-outliersNorm.sql`](360-outliersNorm.sql) -- normalize outlier detection scores
 
+* [`chapter-3-2.sql`](chapter-3-2.sql) -- generate tables for Chapter 3.2
+* [`chapter-3-2-plots.R`](chapter-3-2-plots.R) -- generate plots for Chapter 3.2
+
 ## Chapter 3.3 -- partisan bias
-* [`400-partisanBias.R`](400-partisanBias.R)
-* [`405-gerrySwing.sql`](405-gerrySwing.sql)
-* [`410-gerrySwingV.R`](410-gerrySwingV.R)
-* [`420-uniformSwing.R`](420-uniformSwing.R)
+* [`400-partisanBias.R`](400-partisanBias.R) -- compute requisite vote swings
+* [`405-gerrySwing.sql`](405-gerrySwing.sql) -- initialize vote swing simulation tables
+* [`410-gerrySwingV.R`](410-gerrySwingV.R) -- vote swing simulations
+* [`420-uniformSwing.R`](420-uniformSwing.R) -- uniform swing simulations (old version)
+
+* [`chapter-3-3.R`](chapter-3-3.R) -- generate tables for Chapter 3.3
+* [`chapter-3-3-plots.R`](chapter-3-3-plots.R) -- generate plots for Chapter 3.3
 
 ## Chapter 3.4 -- efficiency gap
-* [`500-wastedVotes.sql`]
-* [`550-efficiencyGap.R`]
+* [`500-wastedVotes.sql`](500-wastedVotes.sql) -- compute wasted vote counts
+* [`550-efficiencyGap.R`](550-efficiencyGap.R) -- compute efficiency gap indices
+
+* [`chapter-3-4.sql`](chapter-3-4.sql) -- generate tables for Chapter 3.4
 
 ## Chapter 3.5 -- malapportionment
-* [`600-malapp.sql`]
-* [`650-malappParty.sql`]
+* [`600-malapp.sql`](600-malapp.sql) -- compute malapportionment indices
+* [`650-malappParty.sql`](650-malappParty.sql) -- compute party-specific malapportionment indices
+
+* [`chapter-3-5.sql`](chapter-3-5.sql) -- generate tables for Chapter 3.5
+* [`chapter-3-5.R`](chapter-3-5.R) -- statistical model for Chapter 3.5
 
 ## Chapter 3.7 -- circumstantial evidence
-* [`700-monotonicity.sql`]
-* [`720-incumPacking.sql`]
-* [`740-polarWBP.sql`]
-* [`750-tiltClusWBP.R`]
-* [`760-tiltWBP.sql`]
-* [`770-tiltRDA.sql`]
+* [`700-monotonicity.sql`](700-monotonicity.sql) -- compute non-monotonicity index
+* [`720-incumPacking.sql`](720-incumPacking.sql) -- compute incumbency packing index
+* [`740-polarWBP.sql`](740-polarWBP.sql) -- compute mayoral polarization index
+* [`750-tiltClusWBP.R`](750-tiltClusWBP.R) -- precinct clustering for tilt computations
+* [`760-tiltWBP.sql`](760-tiltWBP.sql) -- compute mayoral election tilt
+* [`770-tiltRDA.sql`](770-tiltRDA.sql) -- compute council election tilt
+
+* [`chapter-3-7-polar.sql`](chapter-3-7-polar.sql) -- generate tables for Chapter 3.7
+* [`chapter-3-7-polar.R`](chapter-3-7-polar.R) -- generate plots for Chapter 3.7
+
+## Chapter 3.8 -- gerrymandering in Krakow
+
+* [`krakow.sql`](krakow.sql) -- generate tables
+* [`krakow0.sql`](krakow0.sql) -- generate tables
+* [`krakow1-thold.R`](krakow1-thold.R) -- compute effective seat thresholds
+* [`krakow2-q.R`](krakow2-q.R) -- estimate $q$ parameters
+* [`krakow3-p.R`](krakow3-p.R) -- estimate $p$ parameters
+* [`krakow2-expectS.sql`](krakow2-expectS.sql) -- compute expected seats
+* [`krakow2-sDist.R`](krakow2-sDist.R) -- compute seat distributions
+* [`krakow2-pValues.sql`](krakow2-pValues.sql) -- compute $p$-values
+* [`krakow4-np.R`](krakow4-np.R) -- compute non-parametric seats-votes curves
+* [`krakow5-norm.R`](krakow5-norm.R) -- compute normalized votes
+* [`krakow6-outliers.sql`](krakow6-outliers.sql) -- identify outliers
+* [`krakow7-swing.R`](krakow7-swing.R) -- swing simulations
+* [`krakow7-swing2.R`](krakow7-swing2.R) -- swing simulations
+* [`krakow8-waste.sql`](krakow8-waste.sql) -- compute wasted votes
+
+* [`krakowStats.sql`](krakowStats.sql) -- aggregate stats
+* [`chapter-3-8-wyniki.R`](chapter-3-8-wyniki.R) -- generate election result plots for Chapter 3.8
+* [`chapter-3-8.R`](chapter-3-8.R) -- generate method plots for Chapter 3.8
 
 ## Chapter 4.1 -- suspect identification
-* [`900-suspects.sql`]
-* [`920-suspectsAggr.sql`]
-* [`950-intent.sql`]
+* [`900-suspects.sql`](900-suspects.sql) -- generates the `suspects` table
+* [`920-suspectsAggr.sql`](920-suspectsAggr.sql) -- aggregation of suspicion indices
+* [`950-intent.sql`](950-intent.sql) -- aggregation of intent indicators
 
-* chapter-3-2-plots.R
-* chapter-3-2.sql
-* chapter-3-3-plots.R
-* chapter-3-3.R
-* chapter-3-4.sql
-* chapter-3-5.R
-* chapter-3-5.sql
-* chapter-3-7-polar.R
-* chapter-3-7-polar.sql
-* chapter-3-8-wyniki.R
-* chapter-3-8.R
-* chapter-4-1.R
-* chapter-4-1.sql
-* chapter-4-5.R
-* chapter-4-5.sql
-
-* ecdf.R
-
-* krakow.sql
-* krakow0.sql
-* krakow1-thold.R
-* krakow2-expectS.sql
-* krakow2-pValues.sql
-* krakow2-q.R
-* krakow2-sDist.R
-* krakow3-p.R
-* krakow4-np.R
-* krakow5-norm.R
-* krakow6-outliers.sql
-* krakow7-swing.R
-* krakow7-swing2.R
-* krakow8-waste.sql
-* krakowStats.sql
-* 999-npTestKrk.R
+* [`chapter-4-1.sql`](chapter-4-1.sql) -- generate tables for Chapter 4.1
+* [`chapter-4-1.R`](chapter-4-1.R) -- generate plots for Chapter 4.1
+* [`chapter-4-5.sql`](chapter-4-5.sql) -- generate tables for Chapter 4.5
+* [`chapter-4-5.R`](chapter-4-5.R) -- generate plots for Chapter 4.5
 
 # Credits
 Author: [Dariusz Stolicki](https://cbip.uj.edu.pl/stolicki)
